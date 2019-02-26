@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Abril+Fatface|Nixie+One|Playfair+Display|Sacramento" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/styles.css" type="text/css" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="assets/img/favicon1.png" type="image/x-icon" />
+    <script src="assets/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.js" 
+    integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+            <div id="overlay" class="overlay"></div>
+            <div class="row justify-content-center mb-3">
+                <div class="col-lg-12 text-center">
+                        <a href="index.html"><img src="assets/img/Sylvia Mars_logo.png" height="275px"></a>
+                </div>
+            </div>   
+            <div class="row justify-content-center mt-4">
+                 <!--Navbar left-->
+                <div class="col-lg-2">
+                    <ul id="nav" class="nav flex-column justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contacto" href="javascript:void(0)">Contacto</a>
+                            <!--Overlay function-->
+                            <script>
+                                var contacto = document.getElementById("contacto");
+                                contacto.onclick = function(){
+                                cargar_overlay();
+                                    }
+                            </script>   
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <img class="m-3" src="assets/img/insta.png" height="30px">
+                        </li>
+                    </ul>
+                </div>     
+                <!--Main content-->
+                <div class="col-lg-8">
+                    <div class="text-center">
+                        <img class="m-2" src="assets/img/Servicios 2019.png" width="90%">
+                       <p class="mt-5">Encuentra aquí toda la información sobre los servicios que se ofrecen en este momento y sus precios .</p>
+                       <div class="row justify-content-center">
+                            <div class="col-lg-12 mt-4 mb-3 text-center">
+                                Descárgate también el dossier con todos los servicios 
+                                <a id="link" href="javascript:void(0)">Aquí</a>
+                            </div>
+                            <div>
+                                <img id="dossier" class="m-5" src="assets/img/dossier.png" width="50%">
+                            </div>
+                            <h2>Servicios generales:</h2>
+                            <table class="table table-responsive mb-5">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Maquillaje y Peluquería</th>
+                                        <th scope="col">Express (30m)</th>
+                                        <th scope="col">Completo (1h30m)</th>
+                                        <th scope="col">Workshop (3h)</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1 persona</th>
+                                        <td>35€</td>
+                                        <td>70€</td>
+                                        <td>130€</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2/4 personas personas</th>
+                                        <td>30€ ppp</td>
+                                        <td>60€ ppp</td>
+                                        <td>100€ ppp</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">Grupos a partir de 4</th>
+                                        <td colspan="2">No se realizan</td>
+                                        <td>65€ solicitar información</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                        
+
+                            <h2>Cursos:</h2>
+                            <table class="table table-responsive mb-5">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">CURSOS</th>
+                                        <th scope="col">Express (30m)</th>
+                                        <th scope="col">Completo (1h30m)</th>
+                                        <th scope="col">Workshop (3h)</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1 persona</th>
+                                        <td>35€</td>
+                                        <td>70€</td>
+                                        <td>130€</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2/4 personas personas</th>
+                                        <td>30€ ppp</td>
+                                        <td>60€ ppp</td>
+                                        <td>100€ ppp</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">Grupos a partir de 4</th>
+                                        <td colspan="2">No se realizan</td>
+                                        <td>65€ solicitar información</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+                <!--Footer-->
+    <footer>
+            <div class="container">
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-6 text-center">
+                        <p>Recomendado en </p>
+                        <img src="assets/img/bodasnet.png" height="50px">
+                    </div>
+                    <div class="col-lg-3 text-left">
+                        <ul>
+                            <li>
+                                <a href="#">Preguntas frecuentes</a>
+                            </li>
+                            <li>
+                                <a href="#">Servicios y precios</a>
+                            </li>
+                            <li>
+                                <a href="#">Zonas de servicio</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 text-left">
+                        <ul>
+                            <li>
+                                <a href="#">Política de cookies</a>
+                            </li>
+                            <li>
+                                <a href="#">Política de privacidad</a>
+                            </li>
+                            <li>
+                                <a href="#">Términos y condiciones</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="col-md-12 mt-3">
+                        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+                            <a href="#"> Silvia2DAW</a>
+                        </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
