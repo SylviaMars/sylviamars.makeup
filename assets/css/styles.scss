@@ -1,0 +1,187 @@
+/*fonts*/
+
+$font1: 'Playfair Display', serif;
+$font2: 'Abril Fatface', cursive;
+$font3: 'Sacramento', cursive;
+$font4: 'Nixie One', cursive;
+$font5: 'Quicksand', sans-serif;
+$pink2: #f2ced0;
+$pink: #c98c8f;
+$grey: #495057;
+$animated: all 0.3s ease-in-out;
+
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    font-size: $property;
+  }
+
+body{
+    color: $grey;
+    margin: 15px 15px 15px 15px;
+    border: 1px solid #f3d0d2;
+    font-family: $font5;
+    p{color: $grey;}
+    a{
+        color: $pink !important;
+        text-decoration: none !important;
+        background-color: transparent;
+        :hover{text-decoration: none !important;}
+    }
+    hr{
+        margin: 15px auto 20px;
+        border: 1px solid $grey;
+        width: 90px
+    }
+    li{
+        font-family: $font5;
+        overflow: hidden;
+        border: none;
+        background: transparent;
+        border: none;
+        outline: none;
+        margin-bottom: 5px; 
+        :hover{@include transform(110%)}
+        
+    }
+    .card{
+        border: none;
+        margin-bottom: 20px;
+    }
+    .box{
+        border: 0.5px solid #f2ced0;
+        width: 191px;
+        border-radius: 2px;
+        height: 31px;
+        margin-top: 10px;
+        svg{margin-right: 3px;}
+        input{border: none;}
+     }
+    .nav-link{color: $pink;}
+    .slider_img{height: 260px;}
+    li:nth-child(4){
+        font-family: $font2;
+    }
+    #carousel{ background-image: url("../../assets/img/marble.jpg")}
+    h2{font-family: $font2; color: $grey;}
+    h3{font-family: $font2; color: $grey;}
+    .table{
+        width: 90%;
+        margin: 10px;
+        color: $grey; 
+        thead, tbody{background-image: url("../../assets/img/marble.jpg");background-repeat: none; background-size: cover;}
+        tr{border-color: #f3d0d2;border: 0,5px;}
+    }
+    #dossier{display: none;}
+    #overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        right: 0;
+        top: 0;
+        background-color: #f3d0d2;
+        overflow-x: hidden;
+        transition: .5s ease;
+        .closebtn {
+            margin-left: 50px; 
+            font-size: 60px;
+            color:$grey !important;
+            text-decoration: none !important;
+            :hover{color: #c98c8f }
+        
+        }
+        
+        h2, h5{color: $grey;}
+        form{
+            padding: 50px;
+            .form-control{
+                background-color: #f3d0d2;
+                border: 1px solid white;
+            
+            }
+        }
+        #email{
+            grid-column: 1/2;
+            grid-row: 2/2;
+        }
+        #name{
+            grid-column: 1/2;
+            grid-row: 1/1;
+        }
+        #phone{
+            grid-column: 2/3;
+            grid-row: 2/2;
+        }
+        #surname{
+            grid-column: 2/3;
+            grid-row: 1/1;
+        }
+        #textarea{
+            grid-column: 1/2;
+            grid-row: 3/3;
+            textarea{
+                background-color: #f3d0d2;
+                border: 1px solid white;
+            }
+        }
+        #input_button{
+            grid-column: 2/3;
+            grid-row: 3/3;
+            background-color: white;
+        }
+
+    }
+    #filters{
+        input{border: #f2ced0; }
+        select{border: 1px solid #f2ced0; background-color: white; }
+    }
+    #ui-datepicker-div{
+        background-color: white;
+        margin-top: 5px;
+        border: 1px solid #f2ced0;
+        padding: 5px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50px 50px 200px;
+        grid-gap: 5px;
+        padding: 5px;
+        
+      }
+    .input-group-text{
+        background-color: transparent;
+        border: none;
+    }
+    footer{
+        margin-bottom: 5px;
+    }
+}
+@media screen and (max-width: 650px) {
+    body {
+        .flex-column{text-align: center;}
+        #nav{margin-top: -5%; margin-bottom: 40px;}
+        .box{height: 32px;}
+        #filters{text-align: left !important;
+        form{
+            text-align: left !important;
+        }}
+        footer{
+            margin-bottom: 5px;
+            .col-lg-6:nth-child(1){
+                border-right: none;
+                padding-top: 30px;
+                margin-bottom: 10px;
+            }
+        
+            .text-left {
+                text-align: center!important;
+                ul{
+                    padding-left: 0; 
+                }
+            }
+        }
+    }
+}
